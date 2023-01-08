@@ -1,0 +1,209 @@
+
+body {
+    background-color: #FFE7FF;
+    margin: 0;
+}
+
+.nav-bar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;    
+    height: 100px;
+    background-color: #AF699C;
+    display: flex;
+}
+
+.nav-button, .thumbnail-div, .thumbnail-undertext, .player-name-con, .player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button {
+    width: 17%;
+    height: 100px;
+}
+
+.nav-hover:hover {
+    background-color: #9E568A;
+}
+
+.nav-clicked {
+    background-color: #834772;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p, li {
+    font-family: "RegularText";
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: "NavBarFont";
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: 2.75rem;
+    margin: 0 150px 30px 0;
+}
+
+@font-face {
+    font-family: "NavBarFont";
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RegularText";
+    src: url(Dhyana\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "TitleText";
+    src: url(OpenSans-Regular.ttf);
+}
+
+#pippi-img {
+    width: 25%;
+
+    position: fixed;
+    bottom: -15;
+    right: 0;
+    z-index: 1; 
+}
+
+#homeText-con {
+    margin-top: 100px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+}
+
+#homeThumbnail-con {
+    width: 55%;
+    height: 600px;
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.thumbnail-div {
+    width: 500px;
+    height: 275px;
+    border-radius: 25px;
+    margin-top: 10px;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail, .thumbnail-undertext {
+    width: 100%;
+}
+
+.profile-pic {
+    height: 100%;
+}
+
+.player-name-con {
+    width: 300px;
+}
+
+
+.thumbnail-undertext {
+    position: absolute;
+    height: 50px;
+    margin-top: 225px;
+    background-color: #AF699C;
+    opacity: 95%;
+    overflow: hidden; 
+}
+
+.thumbnail-undertext, h3 {
+    font-family: "TitleText";
+    font-size: 2.25rem;
+    color: white;
+}
+
+#osu-uvod {
+    max-width: 45%;
+    font-size: 2rem;
+    margin-left: 8%;
+}
+
+.player-container {
+    width: 100%;
+    height: 100px;
+    background-color: #100114;
+    margin-top: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#players-con {
+    width: 400px;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-top: 125px;
+}
+
+@media screen and (max-width: 1440px) {
+    .nav-button {
+        width: 25%;
+    }
+
+    h1, li{
+        font-size: 2rem;
+    }
+    
+    #osu-uvod {
+        font-size: 1.5rem;
+    }
+
+    #homeThumbnail-con {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+   h1 {
+        font-size: 1rem;
+   } 
+   .nav-bar, .nav-button, .nav-clicked{
+    height: 50px;
+   }
+   .thumbnail-div {
+        height: 165px;
+   }
+   #homeThumbnail-con {
+        width: 80%;
+        height: 100%;
+   }
+    .thumbnail, .thumbnail-undertext, .thumbnail-div{
+        width: 300px;
+    }
+    .thumbnail-undertext {
+        margin-top: 130px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+    #homeText-con {
+        flex-direction: column;
+        height: 80%;
+    }
+    #osu-uvod {
+        max-width: 100%;
+    }
+}
