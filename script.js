@@ -52,4 +52,6 @@ function showKaplan() {
     playerInfo.innerHTML = 'Kaplan je také velice dobrý hráč, ale komunitou je spíše znán jako pořadatel všech českých turnajů, především naše MČSR - Mistrostvý české a slovenské republiky';
 }
 
+showMrNobady();
+
 

@@ -14,7 +14,7 @@ body {
     display: flex;
 }
 
-.nav-button, .thumbnail-div, .thumbnail-undertext, .player-name-con, .player-container, #playertext-con{
+.nav-button, .thumbnail-div, .thumbnail-undertext, .player-name-con, .player-container, #playertext-con, .tourney{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@ li {
 #homeText-con {
     margin-top: 50px;
     width: 100%;
-    height: 40%;
+    min-height: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,7 +105,7 @@ li {
 
 #homeThumbnail-con {
     width: 55%;
-    height: 600px;
+    min-height: 600px;
     margin-left: 8%;
     display: flex;
     justify-content: space-around;
@@ -122,11 +122,11 @@ li {
     position: relative;
 }
 
-.thumbnail, .thumbnail-undertext {
+.thumbnail, .thumbnail-undertext, .tourney {
     width: 100%;
 }
 
-.profile-pic {
+.profile-pic, .tourney-info, .tourney-title {
     height: 100%;
 }
 
@@ -171,13 +171,62 @@ li {
     margin-top: 75px;
 }
 
-#title {
+#title, .title-text {
     color: black;
 }
 
 #playerInfo {
     font-size: 1.5rem;
     max-width: 50%;
+}
+
+.tournaments-con {
+    width: 80%;
+    min-height: 80%;
+    margin: 100px 0 0 10%;
+}
+
+.tourney {
+    height: 100px;
+    margin-top: 35px;
+}
+
+.tourney-info {
+    min-width: 20%;
+    background-color: #100114;
+}
+
+.tourney-title {
+    min-width: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.tourney-image {
+    width: 100%;
+    height: 100%;
+    opacity: 15%; 
+    object-fit: cover;
+}
+
+.title-text {
+    position: absolute;
+    margin: 0;
+    top: 10;
+    font-size: 2rem;
+}
+
+.title-spodni {
+    top: 50;
+}
+
+.info-text {
+    color: white;
+    margin: 5px 0 0 10px;
+    font-family: "RegularText";
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 1440px) {
@@ -189,8 +238,8 @@ li {
         font-size: 2rem;
     }
     
-    #osu-uvod {
-        font-size: 1.5rem;
+    #osu-uvod, h3 {
+        font-size: 1.25rem;
     }
 
     #homeThumbnail-con {
@@ -199,12 +248,12 @@ li {
 }
 
 @media screen and (max-width: 650px) {
-   h1 {
+    h1 {
         font-size: 1rem;
-   } 
-   .nav-bar, .nav-button, .nav-clicked{
-    height: 50px;
-   }
+    } 
+    .nav-bar, .nav-button, .nav-clicked{
+        height: 50px;
+    }
    .thumbnail-div {
         height: 165px;
    }
@@ -222,9 +271,34 @@ li {
     }
     #homeText-con {
         flex-direction: column;
-        height: 80%;
     }
     #osu-uvod {
         max-width: 100%;
+    }
+
+    .tourney-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tourney-title {
+        width: 100%;
+    }
+    
+    .tourney {
+        flex-direction: column;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .info-text {
+        font-size: 0.75rem;
+    }
+
+    .title-text {
+        font-size: 0.85rem;
     }
 }
