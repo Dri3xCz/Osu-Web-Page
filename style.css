@@ -264,6 +264,30 @@ footer {
     }
 }
 
+@media screen and (max-width: 900px){
+    .flex {
+        flex-direction: column;   
+    }
+
+    #players-con {
+        width: 90%;
+    }
+
+    .player-container {
+        height: 25px;
+    }
+
+    #playertext-con {
+        width: 100%;
+        margin: 0;
+        justify-content: start;
+    }
+
+    #playerInfo {
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width: 650px) {
     h1 {
         font-size: 1rem;
