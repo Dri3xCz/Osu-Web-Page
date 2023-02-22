@@ -72,17 +72,17 @@ li {
 
 @font-face {
     font-family: "NavBarFont";
-    src: url(Roboto-Regular.ttf);
+    src: url(Fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: "RegularText";
-    src: url(Dhyana\ Regular.ttf);
+    src: url(Fonts/Dhyana\ Regular.ttf);
 }
 
 @font-face {
     font-family: "TitleText";
-    src: url(OpenSans-Regular.ttf);
+    src: url(Fonts/OpenSans-Regular.ttf);
 }
 
 #pippi-img {
